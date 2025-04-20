@@ -1,0 +1,27 @@
+digraph G {
+    rankdir=LR
+    nodesep=0.5
+    ranksep=0.8
+    overlap=false
+    node [shape=circle fontsize=12 width=0.6 height=0.6]
+    
+    S -> S [label="0.50", labelfloat=true, labeldistance=2.0]
+    S -> R [label="0.20"]
+    S -> C [label="0.20"]
+    S -> W [label="0.10"]
+    
+    R -> S [label="0.30"]
+    R -> R [label="0.40", labelfloat=true, labeldistance=2.0]
+    R -> C [label="0.10"]
+    R -> W [label="0.20"]
+    
+    C -> S [label="0.10"]
+    C -> R [label="0.30"]
+    C -> C [label="0.40", labelfloat=true, labeldistance=2.0]
+    C -> W [label="0.20"]
+    
+    W -> S [label="0.20"]
+    W -> R [label="0.10"]
+    W -> C [label="0.30"]
+    W -> W [label="0.40", labelfloat=true, labeldistance=2.0]
+}
